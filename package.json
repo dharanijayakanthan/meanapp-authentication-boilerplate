@@ -2,8 +2,10 @@
   "name": "starter-node-angular",
   "main": "server.js",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.4.3",
     "express": "^4.5.1",
+    "jsonwebtoken": "^8.1.0",
     "method-override": "^2.0.2",
     "mongoose": "^4.12.3",
     "package.json": "^2.0.1"
