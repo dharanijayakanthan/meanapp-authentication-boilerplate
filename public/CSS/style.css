@@ -1,0 +1,66 @@
+.model{
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    height:300px;
+    animation: pop 5s;
+}
+@keyframes pop{
+from{
+    opacity:0;
+}
+to{
+    opacity:1;
+}
+}
+.tick{
+   height:200px;
+   width:200px;
+   margin:auto;
+   border-radius:100%;
+   background-color: rgb(177, 202, 179);
+}
+
+.ticked {
+    display: inline-block;
+  }
+  .ticked:after {
+      position:flex;
+      margin:auto;
+      margin-left:80px;
+      margin-top:50px;
+    /*Add another block-level blank space*/
+    content: '';
+    display: block;
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 40px;
+    height: 80px;
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid rgb(182, 243, 125);
+    border-width: 0 10px 10px 0;
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+    animation: example 5s;
+  }
+  @keyframes example{
+      from{
+        transform: skewX(40px);
+        border:solid white;
+        border-width: 0 10px 10px 0;
+
+      }
+      to{
+        transform: rotate(45deg);
+        border: solid rgb(182, 243, 125);
+        border-width: 0 10px 10px 0;
+
+      }
+  }
+  
+.message>p{
+text-align: center;
+font-family:cursive;
+font-size: 25px;
+color:lightgreen; 
+}
